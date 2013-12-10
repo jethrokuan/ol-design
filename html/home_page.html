@@ -8,17 +8,23 @@
 <body>
   <div id="container">
     <header id="header">
-      <div id="logo">
-        <a href="#"><img src="images/logo.png" alt="" /></a>
-        <p>
-          <b>Online Education</b>
-          <span>, </span>
-          <b>Made Free and Accessible</b>
-        </p>
-      </div>
+      <hgroup id="hgroup-logo">
+        <div id="logo">
+          <a href="#"><img src="images/logo.png" alt="" /></a>
+        </div>
+        <div id="tagline">
+          <p>Online education, made free and accessible</p>
+        </div>
+        <div id="search">
+          <form>
+            <input id="search-box" type="text" placeholder="Search (eg. Price Discrimination)" name="search"/>
+          </form>
+        </div>
+      </hgroup>
       <nav id="header-nav">
       <ul>
-        <li><a href="/">HOME</a></li>
+        <!-- <span id="active_page">About us</span> -->
+        <li id="nav-home"><a href="/">HOME</a></li>
         <li><a href="/subjects">SUBJECTS</a></li>
         <li><a href="/team">ABOUT OL</a></li>
         <li><a href="/opportunities">OPPORTUNITIES</a></li>
@@ -28,10 +34,6 @@
       </nav>
     </header>
     <section>
-      <form>
-        <input id="search-box" type="text" placeholder="Search (eg. Price Discrimination)" name="search"/>
-        <input id="search-button" type="submit" />
-      </form>
       <header>
         <h1>419 bite-sized lectures in...</h1>
       </header>

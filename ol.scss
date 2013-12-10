@@ -1,143 +1,14 @@
 //Settings
-$max-width: 980px;
-$background-colour: #fbfaf9;
-$base-color: #0d96cd;
-
+@import "variables.scss";
 @import "bourbon/bourbon";
 @import "neat/neat";
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+//Breakpoints
+$tablet: new-breakpoint(max-width 990px 6);
+$mobile: new-breakpoint(max-width 600px 6);
 
-//Background
-html {
-  background: $background-colour;
-}
-body {
-  margin: 0px;
-  color: #555;
-}
-a{
-  text-decoration: none;
-}
-#container {
-  @include outer-container;
-}
-// Typography
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Roboto Slab', serif;
-}
-
-button {
-  @include button;
-}
-
-//Header
-#header {
-  padding: 23px 0;
-  display: block;
-}
-#logo {
-  height: 103px;
-  padding: 0 0 14px;
-  border-bottom: 3px solid #dcdcd5;
-}
-
-#logo > a {
-  position: absolute;
-  margin-left: 449px;
-  z-index: 2;
-  width: 82px;
-}
-
-#logo > p {
-  font-family: 'Open Sans', sans-serif;
-  position: relative;
-  color: #9c8d6c;
-  letter-spacing: .07em;
-  margin: 0;
-}
-
-#logo > p > span {
-  position: absolute;
-  left: -9999px;
-}
-
-#logo > p > b:first-child {
-  right: auto;
-  left: 0;
-  border-width: 0 1px 0 0;
-  width: 327px;
-}
-
-#logo > p > b {
-  position: absolute;
-  top: 7px;
-  right: 0;
-  padding: 34px 0 0;
-  height: 56px;
-  width: 326px;
-  border: dashed #dcdcd5;
-  border-width: 0 0 0 1px;
-  text-align: center;
-}
-
-#header-nav {
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: .05em;
-  color: #f8f8f6;
-  margin: 0 1px;
-  display: block;
-  position: relative;
-}
-
-#header-nav > ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  zoom: 1;
-}
-
-#header-nav li {
-  float: left;
-}
-
-#header-nav a {
-  font-family: 'Roboto Slab', serif;
-  color: #272423;
-  text-shadow: 0 1px 1px #f8fcee;
-  display: block;
-  height: 71px;
-  padding: 23px 0 0;
-  width: 163px;
-  background: url(html/images/header-nav.png) no-repeat 0 100%;
-}
-
-#header-nav a:focus, #header-nav a:hover {
-  color: #0d96cd;
-}
-
-#header-nav > ul:after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
-#search-box {
-  background: #fff;
-  padding:10px;
-  border:1 none;
-  border-style:solid;
-  border-color: #eee;
-  width: 90%;
-  height: 65px;
-  font-size: 30px;
-}
-#search-button {
-  @include button(simple, $base-color);
-  height: 65px;
-}
+@import "typography.scss";
+@import "base.scss";
 
 //Responsive Design
 @import "tablet.scss";

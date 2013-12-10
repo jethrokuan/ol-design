@@ -1,0 +1,13 @@
+html {
+  background: $background-colour;
+}
+
+a {
+  text-decoration: none;
+}
+
+#container {
+  @include outer-container;
+}
+
+@import "header.scss";
