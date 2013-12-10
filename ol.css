@@ -61,7 +61,6 @@ button {
 
 #header {
   padding: 23px 0;
-  margin: 0 0 46px;
   display: block; }
 
 #logo {
@@ -139,6 +138,47 @@ button {
   clear: both;
   display: block; }
 
+#search-box {
+  background: #fff;
+  padding: 10px;
+  border: 1 none;
+  border-style: solid;
+  border-color: #eee;
+  width: 90%;
+  height: 65px;
+  font-size: 30px; }
+
+#search-button {
+  border: 1px solid #026890;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #3db8ea;
+  color: white;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #0d96cd;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0d96cd), color-stop(100%, #0273a0));
+  background-image: -webkit-linear-gradient(#0d96cd, #0273a0);
+  background-image: linear-gradient(#0d96cd, #0273a0);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #005a7e;
+  background-clip: padding-box;
+  height: 65px; }
+  #search-button:hover:not(:disabled) {
+    box-shadow: inset 0 1px 0 0 #17a4dc;
+    cursor: pointer;
+    background-color: #0f83b1;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0f83b1), color-stop(100%, #036790));
+    background-image: -webkit-linear-gradient(#0f83b1, #036790);
+    background-image: linear-gradient(#0f83b1, #036790); }
+  #search-button:active:not(:disabled) {
+    border: 1px solid #026890;
+    box-shadow: inset 0 0 8px 4px #035c80, inset 0 0 8px 4px #035c80, 0 1px 1px 0 #eeeeee; }
+  #search-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed; }
+
 @media screen and (max-width: 989px) {
   body {
     min-width: 100%;
@@ -157,7 +197,7 @@ button {
     padding: 0 8%; }
 
   #header {
-    margin-bottom: 82px; }
+    margin-bottom: 22px; }
 
   #logo {
     height: 0;
@@ -188,12 +228,10 @@ button {
     border-bottom: 1px solid #dcdcd5;
     border-left: 1px dashed #dcdcd5; }
 
-  /* line 68, ../../app/assets/stylesheets/tablet.css.scss */
   #header-nav > ul > li:nth-child(3n+1) {
     border-left: none;
     clear: left; }
 
-  /* line 69, ../../app/assets/stylesheets/tablet.css.scss */
   #header-nav > ul > li > a {
     background: none;
     width: 100%;
