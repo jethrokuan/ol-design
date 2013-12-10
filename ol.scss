@@ -1,0 +1,198 @@
+//Settings
+$max-width: 980px;
+$background-colour: #fbfaf9;
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+//Background
+html {
+  background: $background-colour;
+}
+body {
+  margin: 0px;
+  color: #555;
+}
+a{
+  text-decoration: none;
+}
+#container {
+  @include outer-container;
+}
+// Typography
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto Slab', serif;
+}
+
+button {
+  @include button;
+}
+
+//Header
+#header {
+  padding: 23px 0;
+  margin: 0 0 46px;
+  display: block;
+}
+#logo {
+  height: 103px;
+  padding: 0 0 14px;
+  border-bottom: 3px solid #dcdcd5;
+}
+
+#logo > a {
+  position: absolute;
+  margin-left: 449px;
+  z-index: 2;
+  width: 82px;
+}
+
+#logo > p {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  color: #9c8d6c;
+  letter-spacing: .07em;
+  margin: 0;
+}
+
+#logo > p > span {
+  position: absolute;
+  left: -9999px;
+}
+
+#logo > p > b:first-child {
+  right: auto;
+  left: 0;
+  border-width: 0 1px 0 0;
+  width: 327px;
+}
+
+#logo > p > b {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  padding: 34px 0 0;
+  height: 56px;
+  width: 326px;
+  border: dashed #dcdcd5;
+  border-width: 0 0 0 1px;
+  text-align: center;
+}
+
+#header-nav {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .05em;
+  color: #f8f8f6;
+  margin: 0 1px;
+  display: block;
+  position: relative;
+}
+
+#header-nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  zoom: 1;
+}
+
+#header-nav li {
+  float: left;
+}
+
+#header-nav a {
+  font-family: 'Roboto Slab', serif;
+  color: #272423;
+  text-shadow: 0 1px 1px #f8fcee;
+  display: block;
+  height: 71px;
+  padding: 23px 0 0;
+  width: 163px;
+  background: url(html/images/header-nav.png) no-repeat 0 100%;
+}
+
+#header-nav a:focus, #header-nav a:hover {
+  color: #0d96cd;
+}
+
+#header-nav > ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+//Tablet Design
+@media screen and (max-width: 989px) {
+   body {
+    min-width: 100%;
+    font-size: 1.15em;
+    line-height: 1.56;
+    -webkit-text-size-adjust: none;
+  }
+  section {
+    padding: 0 8%;
+  }
+  #container {
+    width: auto;
+    position: relative;
+  }
+
+  #header, #content, #footer {
+    padding: 0 8%;
+  }
+
+  #header {
+    margin-bottom: 82px;
+  }
+
+  #logo {
+    height: 0;
+    padding: 20px 0 160px;
+  }
+
+  #logo > p {
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  #logo > a {
+    margin: 0 auto;
+    position: static;
+    text-align: center;
+    display: block;
+  }
+
+  #logo > p > b {
+    border: none;
+    position: static;
+    text-align: left;
+    font-size: 1em;
+  }
+
+  #logo > p > span {
+    position: static;
+    left: 0;
+  }
+
+  #header-nav > ul > li {
+    width: 33.1%;
+    border-bottom: 1px solid #dcdcd5;
+    border-left: 1px dashed #dcdcd5;
+  }
+
+  /* line 68, ../../app/assets/stylesheets/tablet.css.scss */
+  #header-nav > ul > li:nth-child(3n+1) {
+    border-left: none;
+    clear: left;
+  }
+
+  /* line 69, ../../app/assets/stylesheets/tablet.css.scss */
+  #header-nav > ul > li > a {
+    background: none;
+    width: 100%;
+    height: 66px;
+  }
+}
