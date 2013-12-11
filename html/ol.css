@@ -6,8 +6,49 @@
   box-sizing: border-box; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Slab', serif; }
+  font-family: "Roboto Slab", sans-serif; }
 
+h1 {
+  margin: 0 0 1.25em 0;
+  font-size: 1.72381em;
+  line-height: 1.5em; }
+
+h2 {
+  margin: 0 0 1.42857em 0;
+  font-size: 1.53333em;
+  line-height: 1.42857em; }
+
+h3 {
+  margin: 0 0 1.52381em 0;
+  font-size: 1em;
+  font-style: italic;
+  line-height: 1.52381em; }
+
+p {
+  margin: 0 0 1.14286em 0; }
+
+p:last-child {
+  margin-bottom: 0; }
+
+@media screen and (max-width: 990px) {
+  body {
+    padding-top: 2.83333em;
+    font-size: 1.125em;
+    line-height: 1.5em; }
+
+  h1 {
+    margin-bottom: 1.2em;
+    font-size: 1.66667em;
+    line-height: 1.2em; }
+
+  h2 {
+    margin-bottom: 1.5em;
+    font-size: 1.33333em; }
+
+  h3 {
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    line-height: 1.5em; } }
 html {
   background: #fbfaf9; }
 
@@ -42,6 +83,7 @@ a {
     clear: both; }
 
 #logo {
+  text-align: center;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -89,6 +131,11 @@ a {
   margin-top: 55px;
   width: 100%; }
 
+#search-box-icon {
+  position: relative;
+  left: -20px;
+  top: -30px; }
+
 #header-nav {
   text-transform: uppercase;
   text-align: center;
@@ -108,14 +155,13 @@ a {
   float: left; }
 
 #header-nav a {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Century Gothic", "Tw Cen MT", Futura, "URW Gothic L", Arial, sans-serif;
   color: #272423;
-  text-shadow: 0 0.5px 0.5px #f8fcee;
   display: block;
   height: 71px;
   padding: 23px 0 0;
   width: 163px;
-  background: url(html/images/header-nav.png) no-repeat 0 100%; }
+  background: url(images/header-nav.png) no-repeat 0 100%; }
 
 #nav-home a {
   background-position: -1px 100%; }

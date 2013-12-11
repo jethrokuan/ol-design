@@ -9,6 +9,7 @@
 }
 
 #logo {
+  text-align:center;
   @include span-columns(1);
 }
 
@@ -47,6 +48,12 @@
   width: 100%;
 }
 
+#search-box-icon {
+  position:relative;
+  left: -20px;
+  top: -30px;
+}
+
 #header-nav {
   text-transform: uppercase;
   text-align: center;
@@ -69,14 +76,13 @@
 }
 
 #header-nav a {
-  font-family: 'Roboto Slab', serif;
+font-family: "Century Gothic", "Tw Cen MT", Futura, "URW Gothic L", Arial, sans-serif;
   color: #272423;
-  text-shadow: 0 0.5px 0.5px #f8fcee;
   display: block;
   height: 71px;
   padding: 23px 0 0;
   width: 163px;
-  background: url(html/images/header-nav.png) no-repeat 0 100%;
+  background: url(images/header-nav.png) no-repeat 0 100%;
 }
 
 #nav-home a{
@@ -86,10 +92,6 @@
 #header-nav a:focus, #header-nav a:hover {
   color: #0d96cd;
 }
-
-// #active_page {
-//   display: none;
-// }
 
 #header-nav > ul:after {
   content: "";
